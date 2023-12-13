@@ -70,9 +70,9 @@ const SellProduct = () => {
                  <select class="form-select" aria-label="Default select example"  value={category}
                  onChange={(e) => setCategory(e.target.value)}>
                  <option selected>Open this select menu</option>
-                 <option value="1">Men</option>
-                 <option value="2">Women</option>
-                 <option value="3">kids</option>
+                 <option value="1">Earings</option>
+                 <option value="2">Rings</option>
+                 <option value="3">Necklace</option>
                  </select>
 
                  {/* photo */}
