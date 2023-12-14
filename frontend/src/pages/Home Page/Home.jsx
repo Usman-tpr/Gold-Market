@@ -180,23 +180,23 @@ const Home = () => {
           {
             products && products.map(product => {
               return (
-                <div className="col-2">
+                <Link className="col-2 text-decoration-none text-black" to={`/all-product/${product.slug}`}>
                   <img src={`http://localhost:5000/product-photo/${product._id}`} alt="" />
                   <p className='text-muted'>Usman Ali</p>
                   <p>{product.title}</p>
                   <p className='stars'><FaStar /> <FaStar /><FaStar /><FaStar /> <FaStar /><span style={{ color: "black" }}>(2)</span></p>
                   <p>${product.price}</p>
-                </div>
+                </Link>
               )
             })
           }
-          <div
+          {/* <div
             onMouseOver={() => setClassName('show')}
             onMouseOut={() => setClassName('hide')}
             className={className}
           >
             <FaRegHeart /> <IoCartOutline />
-          </div>
+          </div> */}
         </div>
 
       </div>

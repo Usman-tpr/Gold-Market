@@ -1,0 +1,56 @@
+.bg-image{
+    background-image: url('../../public/assets/images/bradcome_1.jpg');
+}
+.single-nav{
+    padding: 98px;
+    padding-left: 45%;
+}
+
+.green{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: green;
+
+}
+.red{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    margin-left: 4px;
+}
+.pink{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: pink;
+    margin-left: 4px;
+}
+.hidden{
+    display: none;
+}
+.tick-icon{
+    position: absolute;
+    color: yellow;
+}
+.tick-red-loc{
+    position: absolute;
+    color: yellow;
+    left: 7.5%;
+}
+
+.tick-pink-loc{
+    position: absolute;
+    color: yellow;
+    left: 15%;
+}
+.cursor{
+    cursor: pointer;
+    font-size: 28px;
+}
+.col-2 img{
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+}
