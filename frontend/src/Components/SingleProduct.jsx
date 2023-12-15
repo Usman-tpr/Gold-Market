@@ -18,6 +18,16 @@ const SingleProduct = () => {
 
 
   const handlebuy = async () => {
+    let currentCartValue = localStorage.getItem('cart');
+if (!currentCartValue) {
+  currentCartValue = 0;
+}
+currentCartValue = parseInt(currentCartValue);
+
+currentCartValue++;
+
+localStorage.setItem('cart', currentCartValue);
+    
     const promise = new Promise((resolve) => {
       toast.info('added to cart', {
         position: 'top-center',

@@ -17,6 +17,7 @@ import { toast } from 'react-toastify'
 import Carasoule from '../../Components/Carasoule'
 import '../../css/Home.css'
 import Search from '../../Components/Search'
+import Slickcomponent from '../../Components/Slickcomponent'
 const Home = () => {
   const [className, setClassName] = useState('hide');
   const [auth] = useAuth()
@@ -201,7 +202,7 @@ const Home = () => {
         </div>
 
       </div>
-
+          <Slickcomponent />
     </Layout>
   )
 }

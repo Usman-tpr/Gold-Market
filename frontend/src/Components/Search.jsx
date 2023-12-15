@@ -4,6 +4,7 @@ import { IoIosSearch } from "react-icons/io";
 import { FaRegHeart } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
 const Search = () => {
+  const cartItems = localStorage.getItem('cart')
   return (
     <>
      <div className="container mt-2">
@@ -20,7 +21,7 @@ const Search = () => {
             <div className="col-sm-2 d-flex">
             <FaRegHeart size={32}/> <IoCartOutline size={35} className='mx-3'/>
             <div className="loved">0</div>
-            <div className="carted">0</div>
+            <div className="carted">{cartItems}</div>
             </div>
         </div>
      </div>
