@@ -5,7 +5,7 @@ import img2 from '../images/main-banner-2.jpg'
 const Carasoule = () => {
   return (
     <>
-    <div id="carouselExample" class="carousel slide mt-5">
+    <div id="carouselExample" class="carousel slide mt-3">
   <div class="carousel-inner">
     <div class="carousel-item active" >
       <div className="container-fluid bg-img">

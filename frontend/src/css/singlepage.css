@@ -54,3 +54,16 @@
     height: 150px;
     margin-top: 10px;
 }
+
+.count-position{
+    position: absolute;
+    left: 22%;
+    top: 2%;
+    background-color: rgb(105, 105, 105);
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding-left: 10px;
+    padding-top: 5px;
+}

@@ -16,6 +16,7 @@ import axios from 'axios'
 import { toast } from 'react-toastify'
 import Carasoule from '../../Components/Carasoule'
 import '../../css/Home.css'
+import Search from '../../Components/Search'
 const Home = () => {
   const [className, setClassName] = useState('hide');
   const [auth] = useAuth()
@@ -73,7 +74,7 @@ const Home = () => {
   }
   return (
     <Layout>
-
+      <Search />
       <div className='container mt-5'>
 
         <div className='row'>
@@ -98,7 +99,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+     
       <Carasoule />
 
       {/* section 1 after carasoule */}
@@ -138,7 +139,7 @@ const Home = () => {
 
       {/* section 2 */}
 
-      <div className="container mt-5 pt-3">
+      <div className="container mt-5 ">
         <div className="row d-flex justify-content-between">
 
           <div className="col-3 section-2 bg-img-1 p-3 pt-5 pb-5">

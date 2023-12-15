@@ -1,0 +1,62 @@
+.search-input{
+    border: none;
+    background-color: #f5f5f5;
+    outline: none;
+    color: black;
+    padding: 8px;
+    padding-left: 10px;
+    
+}
+.search-text{
+    position: absolute;
+    top: 12%;
+    left: 6.5%;
+    transition: 0.5s ease;
+    font-size: 12px;
+}
+.search-icon{
+    position: relative;
+    left: -9%;
+}
+
+.search-input:focus + .search-text {
+    position: absolute;
+    top: 10%;
+    left: 6.5%;
+    font-size: 10px;
+}
+
+.gold-text{
+    color: #CE9946;
+    margin-top: 10px;
+    margin-left: -25px;
+}
+
+.loved{
+    position: relative;
+    top: -13%;
+    left: -50%;
+    z-index: 1;
+    color: white;
+    background-color: black;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    padding-left: 6px;
+    font-size: 14px;
+
+}
+.carted{
+    position: relative;
+    top: -13%;
+    left: -30%;
+    z-index: 1;
+    color: white;
+    background-color: black;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    padding-left: 6px;
+    font-size: 14px;
+
+}
