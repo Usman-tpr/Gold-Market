@@ -7,6 +7,7 @@ import Login from './Components/Login'
 import Dashboard from './Components/Dashboard'
 import SingleProduct from './Components/SingleProduct'
 import Buy from './pages/Buy Page/Buy'
+import Product from './pages/Products Page/Product'
 // import Test from './Components/Test'
 
 
@@ -24,6 +25,7 @@ const App = () => {
    <Route path='/dashboard' element={<Dashboard />} />
    <Route path='/all-product/:slug' element={<SingleProduct />} />
    <Route path='/buy/:slug' element={<Buy />} />
+   <Route path='/products' element={<Product />} />
 
   </Routes>
 

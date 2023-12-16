@@ -20,6 +20,14 @@
     background-image: url('../images/flat-img3.jpg');
     background-size: cover;
 }
+.last-bg-img-1 {
+    background-image: url('../images/cms-banner-1.jpg');
+    background-size: cover;
+}
+.last-bg-img-2 {
+    background-image: url('../images/cms-banner-2.jpg');
+    background-size: cover;
+}
 
 .section-2 p{
     

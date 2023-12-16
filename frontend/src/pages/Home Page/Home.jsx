@@ -203,6 +203,24 @@ const Home = () => {
 
       </div>
           <Slickcomponent />
+
+          <div className="container mt-5 ">
+        <div className="row d-flex justify-content-around">
+
+          <div className="col-sm-5  last-bg-img-1 p-5 pt-5 pb-5">
+            <p>Special Offer</p>
+            <h2 className='pb-3 fw-semibold'>Flutter & Butterfly <br />Pendant</h2>
+            <Link className='link'>Shop Now</Link>
+          </div>
+          <div className="col-sm-5 last-bg-img-2 p-3 pt-5 pb-5">
+            <p>New Collection</p>
+            <h2 className='pb-3 fw-semibold'>Best Gold Filled<br /> Bracellete</h2>
+            <Link className='link'>Shop Now</Link>
+          </div>
+        
+        </div>
+
+      </div>
     </Layout>
   )
 }

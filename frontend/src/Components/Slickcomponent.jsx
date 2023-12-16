@@ -2,6 +2,15 @@ import React from 'react'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import '../css/slickcomponent.css'
+import Earings from '../images/earrings.jpg'
+import bracelets from '../images/bracelets.jpg'
+import necklace from '../images/necklaces.jpg'
+import pendant from '../images/pendant.jpg'
+import rings from '../images/rigs.jpg'
+import engage from '../images/1.jpg'
+import charm from '../images/04.jpg'
+import others from '../images/05.jpg'
 const Slickcomponent = () => {
     var settings = {
         dots: true,
@@ -41,33 +50,49 @@ const Slickcomponent = () => {
   return (
     <>
 
-    <div className='mt-5 container'>
-        
+    <div className="slick">
+    <div className='mt-5 container '>
+         <h2 className='text-center fw-semibold pt-5'>Popular Categories</h2>
+        <div className="row p-5">
         <Slider {...settings}>
-          <div>
-            <h3></h3>
+          <div >
+            <img src={pendant} alt="" className='rounded-circle'/>
+            <h5 className='mx-5 mt-3'>Necklaces</h5>
           </div>
           <div>
-            <h3>2</h3>
+          <img src={Earings} alt="" className='rounded-circle'/>
+            <h5 className='mx-5 mt-3'>Earings</h5>
           </div>
           <div>
-            <h3>3</h3>
+          <img src={rings} alt="" className='rounded-circle'/>
+            <h5 className='mx-5 mt-3'>Rings</h5>
           </div>
           <div>
-            <h3>4</h3>
+          <img src={bracelets} alt="" className='rounded-circle'/>
+            <h5 className='mx-5 mt-3'>Bracelets</h5>
           </div>
           <div>
-            <h3>5</h3>
+          <img src={engage} alt="" className='rounded-circle'/>
+            <h5 className='mx-5 mt-3'>Engagement Rings</h5>
           </div>
           <div>
-            <h3>6</h3>
+          <img src={necklace} alt="" className='rounded-circle'/>
+            <h5 className='mx-5 mt-3'>Necklaces</h5>
           </div>
           <div>
-            <h3>7</h3>
+          <img src={charm} alt="" className='rounded-circle'/>
+            <h5 className='mx-5 mt-3'>Charm & Dingles</h5>
+          </div>
+          <div>
+          <img src={others} alt="" className='rounded-circle'/>
+            <h5 className='mx-5 mt-3'>Others</h5>
           </div>
           
+          
         </Slider>
+        </div>
       </div>
+    </div>
     </>
   )
 }
