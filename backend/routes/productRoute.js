@@ -1,11 +1,12 @@
 const express = require('express');
 const route = express.Router();
 const {productController ,getProductController , categoryViseProducts,singleProductController ,getMyProductController, productPhotoController,updateProductController, deleteProductController} = require('../controllers/productController')
-
+const { postBlog } = require('../controllers/blogController')
 const formidable = require("express-formidable")
 
 //addproduct
 route.post("/add-product",formidable(),productController)
+route.post("/add-blog",formidable(),postBlog)
 
 // get all products
 

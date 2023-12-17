@@ -146,17 +146,17 @@ const Home = () => {
           <div className="col-3 section-2 bg-img-1 p-3 pt-5 pb-5">
             <p>FLAT 30% OFF</p>
             <h3 className='pb-3 '>Glowing Gold <br />Rings</h3>
-            <Link className='link'>Shop Now</Link>
+            <Link className='link' to='/products/Rings'>Shop Now</Link>
           </div>
           <div className="col-3 section-2 bg-img-2 p-3 pt-5 pb-5">
             <p>WOMEN SPECIAL</p>
             <h3 className='pb-3 '>Women Gold<br /> Bracellete</h3>
-            <Link className='link'>Shop Now</Link>
+            <Link className='link' to='/products/Necklaces'>Shop Now</Link>
           </div>
           <div className="col-3 section-2 bg-img-3 p-3 pt-5 pb-5">
             <p>FLAT 20% OFF</p>
             <h3 className='pb-3 '>Trendy Ladies <br />Gold Ring</h3>
-            <Link className='link'>Shop Now</Link>
+            <Link className='link' to='/products/Rings'>Shop Now</Link>
           </div>
         </div>
 
@@ -210,12 +210,12 @@ const Home = () => {
           <div className="col-sm-5  last-bg-img-1 p-5 pt-5 pb-5">
             <p>Special Offer</p>
             <h2 className='pb-3 fw-semibold'>Flutter & Butterfly <br />Pendant</h2>
-            <Link className='link'>Shop Now</Link>
+            <Link className='link' to='/products/Necklaces'>Shop Now</Link>
           </div>
           <div className="col-sm-5 last-bg-img-2 p-3 pt-5 pb-5">
             <p>New Collection</p>
             <h2 className='pb-3 fw-semibold'>Best Gold Filled<br /> Bracellete</h2>
-            <Link className='link'>Shop Now</Link>
+            <Link className='link' to='/products/Necklaces'>Shop Now</Link>
           </div>
         
         </div>

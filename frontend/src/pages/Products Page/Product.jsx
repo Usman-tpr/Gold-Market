@@ -4,11 +4,31 @@ import '../../css/Product.css'
 import Layout from '../../Layout/Layout'
 import axios from 'axios'
 import { FaStar } from "react-icons/fa";
+import { useParams } from 'react-router-dom'
 const Product = () => {
     const [products, setProducts] = useState([]);
     const [priceRange, setPriceRange] = useState({ min: '', max: '' }); 
     const [error, setError] = useState()
+    const params = useParams();
+    const title = params.category
+    
     const homeData = async () => {
+    if(params.category){
+        if(params.category==='Necklaces'){
+            var category =3;
+        }
+        else if(params.category==='Earings'){
+            var category =1;
+        }
+        else if(params.category==='Rings'){
+            var category =2;
+        }
+        const { data } = await axios.get(`http://localhost:5000/category/${category}`)
+        console.log(data.products)
+        setProducts(data.products)
+          
+    }
+    else {
         try {
 
             const { data } = await axios.get('http://localhost:5000/all-products')
@@ -18,6 +38,7 @@ const Product = () => {
         } catch (error) {
             console.log(error)
         }
+    }
     }
     useEffect(() => {
         homeData()
@@ -57,7 +78,7 @@ const Product = () => {
     return (
         <Layout >
             <div className="container-fluid bg-image">
-                <h5 className='single-nav fw-bold'>Diamonds</h5>
+                <h5 className='single-nav fw-bold'>{title}</h5>
             </div>
 
             <div className="container">
@@ -73,7 +94,7 @@ const Product = () => {
                             <option value='highToLow'>High to Low</option>
                         </select>
                         <div>
-                            0 of {products.length} Products
+                            0 of {products?products.length:0} Products
                         </div>
                     </div>
                 </div>
@@ -119,7 +140,7 @@ const Product = () => {
 
                     <div className="col-8 d-flex flex-wrap justify-content-around">
                         {error && <div className='d-flex justify-content-center align-items-center mt-5 mb-5 btn btn-outline-dark'><h5>{error}</h5></div>}
-                        {products.map(product =>
+                        {products && products.map(product =>
                             <Link className='link col-4 border-0'>
                                 <img src={`http://localhost:5000/product-photo/${product._id}`} width='200px' height='200px' />
                                 <p className='text-muted mt-2'>Usman Ali</p>
